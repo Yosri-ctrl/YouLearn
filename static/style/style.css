@@ -41,7 +41,9 @@ div.icon {
   text-align: center;
   text-decoration: none;
 }
-
+.ul li a:hover {
+  background-color: tomato;
+}
 #carousel {
   margin-top: 50px;
   width: 100%;

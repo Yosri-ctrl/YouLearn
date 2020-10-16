@@ -3,18 +3,20 @@
   margin: 0;
   padding: 0;
 }
+.main{
+
+
+}
 
 .header {
-  height: 55px;
-  margin: 0 3%;
-  padding-top: 10px;
-  background-color: #333;
-}
-.header {
-  height: 55px;
-  margin: 0 3%;
-  padding-top: 10px;
-  background-color: #333;
+  background-color:black;
+  background-image: url("img/virtual-teaching-how-to-crush-itjpg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 94%;
+  background-position:center bottom;
+  height: 600px;
+  padding: 0;
 }
 .footer {
   height: 40px;
@@ -34,25 +36,30 @@
 }
 
 div.icon {
+  position: fixed;
   width: 10px;
   height: 10px;
 }
 
 .list {
+  
   margin-left: 60px;
 }
 .ul {
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  position: fixed;
 }
 .ul li {
+  
   float: left;
   padding-left: 30px;
 }
 .ul li a {
+  
   font-size: 28px;
   display: block;
   color: white;
@@ -70,7 +77,7 @@ article {
   margin-top: 120px;
   width: 100%;
   height: 270px;
-  background-color: #333;
+
 
   overflow: auto;
   white-space: nowrap;

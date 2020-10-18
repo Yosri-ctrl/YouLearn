@@ -63,7 +63,7 @@ Date: Sun, 18 Oct 2020 14:27:54 GMT
   "token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTYwMzAzMTI3NCwiZXhwIjoxNjAzMDMxODc0fQ.eyJpZCI6Mn0.erm1Oc6FuZrscAYk61WIIP4IxaD7BYWswmePc9RdP3yyK_wn5fh151T0pHVqfus0xUub8NALB0Bp2SvhIKeK2w"
 }
 ```
-# Return a protected resource: (ex: cources, profile...)
+# Return a protected resource: (ex: courses, profile...)
 This request must be authenticated using a HTTP Basic Authentication header. Instead of email and password, the client can provide a valid authentication token in the email field. If using an authentication token the password field is not used and can be set to any value.
 On success a JSON object with data for the authenticated user is returned.
 On failure status code 401 (unauthorized) is returned.

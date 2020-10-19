@@ -3,20 +3,21 @@
   margin: 0;
   padding: 0;
 }
-.main{
-
-
-}
-
-.header {
-  background-color:black;
-  background-image: url("img/virtual-teaching-how-to-crush-itjpg.jpg");
+section{
+  background-color: #333;
+  background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 94%;
+  background-size: 100% 100%;
   background-position:center bottom;
-  height: 600px;
+  height: 950px;
   padding: 0;
+}
+.header {
+  
+  margin: 0;
+  height: 0;
+  
 }
 .footer {
   height: 40px;
@@ -46,24 +47,24 @@ div.icon {
   margin-left: 60px;
 }
 .ul {
-  
+  height: 100px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   position: fixed;
+  padding-left: 60%;
 }
 .ul li {
-  
+  padding-top: 10px;
   float: left;
   padding-left: 30px;
+  
 }
 .ul li a {
-  
-  font-size: 28px;
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+  font-size:18px;
   display: block;
-  color: white;
-  text-align: center;
+  color: #0099ff;
+  text-align: left;
   text-decoration: none;
 }
 article {
@@ -74,21 +75,26 @@ article {
   color: tomato;
 }
 #carousel {
+  background-color:#333;
   margin-top: 120px;
   width: 100%;
-  height: 270px;
-
-
+  height: 500px;
   overflow: auto;
   white-space: nowrap;
 }
+.main{
+  background-color:#333;
+  padding-bottom: 150px;
+  display:center;
+}
+
 
 #carousel .slide {
+  position: relative;
   margin: 3px;
   padding: 10px;
-  border: 1px solid;
   display: inline-block;
-  background-color: aliceblue;
+  height: 200px;
 }
 #carousel .slide .name a:link,
 a:visited {
@@ -123,4 +129,19 @@ a:visited {
 .frame .categorie .price {
   font-size: 28px;
   margin: 30px 50px;
+}
+.img-h:hover{
+  opacity: 0.3;
+}
+
+.slide .name{
+  text-decoration: none;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  color:white;
+}
+.slide .auther{
+  text-decoration: none; 
+  color: wheat;
 }

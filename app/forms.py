@@ -4,10 +4,10 @@ from wtforms.validators import DataRequired
 
 
 class SignupForm(FlaskForm):
-    email = StringField('Username', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     name = StringField('Name')
-    lastname = StringField('Name')
-    telephone = IntegerField('telephone')
-    profession = StringField('Name')
-    submit = SubmitField('signup')
+    lastname = StringField('LastName')
+    telephone = IntegerField('Telephone Number')
+    profession = StringField('Profession')
+    submit = SubmitField('Sign Up')

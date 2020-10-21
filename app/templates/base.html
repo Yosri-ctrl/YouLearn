@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="static/style/signup-style.css">
     <script src="http://vjs.zencdn.net/4.12/video.js"></script>
   </head>
   <body>
@@ -25,6 +26,12 @@
         <a href="#Catgories">Catgories</a>
         <a href="#profile">Profile</a>
         <a href="#about">About</a>
+        {% if url_for(request.endpoint) == "/signup" %}
+          <a onclick="document.getElementById('id01').style.display='block'" >sign up</a>
+        {% else %}
+          <a href="/signup" onclick="document.getElementById('id01').style.display='block'" >sign up</a>
+        {% endif %}
+
         <div class="search">
           <form action="">
             <input type="text" placeholder="Search..." name="search" />

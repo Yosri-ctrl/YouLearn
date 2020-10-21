@@ -1,7 +1,7 @@
 from app import app,db
 from app.models.user import User
-from flask import request, abort, jsonify, url_for, g
-from forms import SignupForm
+from flask import request, abort, render_template, url_for, g, redirect
+from app.forms import SignupForm
 
 @app.route('/signup', methods=['POST'])
 def signup_post():
@@ -15,13 +15,14 @@ def signup_post():
             abort(400) # missing arguments
     if User.query.filter_by(email = email).first() is not None:
             abort(400) # existing user
-    user = User(email = email, name=name, lastname = lastname, telephone = telephone)
+    user = User(email = email, name=name, lastname = lastname, telephone = telephone, profession = profession)
     user.hash_password(password)
     db.session.add(user)
     db.session.commit()
-    return redirect(url_for('index.html'))
+    return redirect(url_for('index'))
 
 @app.route('/signup')
 def signup():
-	form = SignupForm()
-	
+    form = SignupForm()
+    return render_template('signup.html', form=form, title='signup')
+

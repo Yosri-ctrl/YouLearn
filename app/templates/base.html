@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{title}}</title>
+    <link rel="icon" href="static/style/img/img.png" type="image/icon type" />
+    <link rel="stylesheet" type="text/css" href="static/style/home-style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet" />
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <img class="logo" src="static/style/img/logo5.png" />
+      </a>
+      <div class="navigateur">
+        <a class="active" href="/">Home</a>
+        <a href="#lesson">Lessons</a>
+        <a href="#Catgories">Catgories</a>
+        <a href="#profile">Profile</a>
+        <a href="#about">About</a>
+        <div class="search">
+          <form action="">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+
+    </body>
+  <footer>
+    <div class="footer">Holberton School</div>
+  </footer>
+</html>

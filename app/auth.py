@@ -2,6 +2,7 @@ from app import app,db
 from app.models.user import User
 from flask import request, abort, render_template, url_for, g, redirect, flash
 from app.forms import SignupForm
+from flask_login import login_user
 
 @app.route('/signup', methods=['POST'])
 def signup_post():
@@ -33,4 +34,5 @@ def login_post():
     if not user or not user.verify_password(password):
         flash('Please check your login details and try again.')
         return redirect(url_for('index'))
+    login_user(user, remember=remember)
     return redirect(url_for('index'))

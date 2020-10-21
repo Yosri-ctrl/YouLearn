@@ -50,12 +50,12 @@ window.onclick = function(event) {
       <label><b>{{ form.password.label }}</b></label>
       {{ form.password }}
       <button type="submit">Login</button>
-      {% if get_flashed_messages()[0] is not none %}
+      <!--{% if get_flashed_messages()[0] is not none %}
       <script>
         document.getElementById('id02').style.display='block'
       </script>
       {{ get_flashed_messages()[0] }} <br>
-      {% endif %}
+      {% endif %}-->
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>

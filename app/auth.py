@@ -20,9 +20,3 @@ def signup_post():
     db.session.add(user)
     db.session.commit()
     return redirect(url_for('index'))
-
-@app.route('/signup')
-def signup():
-    form = SignupForm()
-    return render_template('signup.html', form=form, title='signup')
-

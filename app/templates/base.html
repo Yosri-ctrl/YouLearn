@@ -26,12 +26,8 @@
         <a href="#Catgories">Catgories</a>
         <a href="#profile">Profile</a>
         <a href="#about">About</a>
-        {% if url_for(request.endpoint) == "/signup" %}
-          <a onclick="document.getElementById('id01').style.display='block'" >sign up</a>
-        {% else %}
-          <a href="/signup" onclick="document.getElementById('id01').style.display='block'" >sign up</a>
-        {% endif %}
-
+        <a onclick="document.getElementById('id01').style.display='block'" >sign up</a>
+        <a onclick="document.getElementById('id02').style.display='block'" >Log in</a>
         <div class="search">
           <form action="">
             <input type="text" placeholder="Search..." name="search" />

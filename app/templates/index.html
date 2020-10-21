@@ -1,5 +1,82 @@
 {% extends "base.html" %}
 {% block content %}
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="./signup" method="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      <label><b>{{ form.email.label }}</b></label>
+      {{ form.email }}
+      <label><b>{{ form.password.label }}</b></label>
+      {{ form.password }}
+      <label><b>{{ form.name.label }}</b></label>
+      {{ form.name }}
+      <label><b>{{ form.lastname.label }}</b></label>
+      {{ form.lastname }}
+      <label><b>{{ form.profession.label }}</b></label>
+      {{ form.profession }}
+      <label><b>{{ form.telephone.label }}</b></label>
+      {{ form.telephone }}
+      <button type="submit">{{ form.submit.label }}</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="./login" method="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      <label><b>{{ form.email.label }}</b></label>
+      {{ form.email }}
+      <label><b>{{ form.password.label }}</b></label>
+      {{ form.password }}
+      <button type="submit">{{ form.submit.label }}</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 
 
 {% endblock %}
+</body>
+</html>

@@ -39,9 +39,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
-
 <div id="id02" class="modal">
   <form class="modal-content animate" action="./login" method="POST">
     <div class="imgcontainer">
@@ -52,7 +49,13 @@ window.onclick = function(event) {
       {{ form.email }}
       <label><b>{{ form.password.label }}</b></label>
       {{ form.password }}
-      <button type="submit">{{ form.submit.label }}</button>
+      <button type="submit">Login</button>
+      {% if get_flashed_messages()[0] is not none %}
+      <script>
+        document.getElementById('id02').style.display='block'
+      </script>
+      {{ get_flashed_messages()[0] }} <br>
+      {% endif %}
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -73,10 +76,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
-
-
 {% endblock %}
 </body>
 </html>

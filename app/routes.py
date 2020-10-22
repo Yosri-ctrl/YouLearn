@@ -21,3 +21,8 @@ def profile():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+@app.route('/cat.html')
+def catgories():
+    form = SignupForm()                         
+    return render_template('cat.html', title='YouLearn', form=form)

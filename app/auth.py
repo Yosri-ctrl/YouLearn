@@ -16,7 +16,7 @@ def signup_post():
             abort(400) # missing arguments
     if User.query.filter_by(email = email).first() is not None:
             abort(400) # existing user
-    user = User(email = email, name=name, lastname = lastname, telephone = telephone, profession = profession)
+    user = User(email = email, name = name, lastname = lastname, telephone = telephone, profession = profession)
     user.hash_password(password)
     db.session.add(user)
     db.session.commit()

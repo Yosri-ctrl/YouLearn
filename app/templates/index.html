@@ -18,13 +18,13 @@
       {{ form.profession }}
       <label><b>{{ form.telephone.label }}</b></label>
       {{ form.telephone }}
-      <button type="submit">{{ form.submit.label }}</button>
+      <button class="button" type="submit">{{ form.submit.label }}</button>
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <input class="input" type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button class="button" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
@@ -49,7 +49,7 @@ window.onclick = function(event) {
       {{ form.email }}
       <label><b>{{ form.password.label }}</b></label>
       {{ form.password }}
-      <button type="submit">Login</button>
+      <button class="button" type="submit">Login</button>
       <!--{% if get_flashed_messages()[0] is not none %}
       <script>
         document.getElementById('id02').style.display='block'
@@ -57,15 +57,236 @@ window.onclick = function(event) {
       {{ get_flashed_messages()[0] }} <br>
       {% endif %}-->
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <input class="input" type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <button class="button" type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
 </div>
+
+
+
+<div class="main">
+  <h2> Categories:</h2>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px"/>
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+  
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+  
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+  
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+  
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="slide">
+      <a class="a" href="">
+        <img class="image" src="" width="200px" height="200px" />
+        <div class="middle">
+          <div class="name"><strong>Cource name</strong></div>
+          <div class="auther">Auther name</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="article">
+  <h2> Lessons:</h2>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px"/>
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+    <div class="price">12$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="price">35$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="price">19$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="price">40$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="price">20$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="price">15$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+    <div class="price">34$</div>
+  </div>
+  <div class="lesson">
+    <img class="l-img" href="" width="150px" height="150px" />
+    <div class="l-p">Sed sit amet dui turpis. Nullam iaculis consequat porta.Quisque pharetra nisi massa</div>
+    <div class="star">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="price">25$</div>
+  </div>
+</div>
+
 <script>
 // Get the modal
 var modal = document.getElementById('id02');

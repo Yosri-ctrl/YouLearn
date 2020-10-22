@@ -1,32 +1,70 @@
-{% extends "base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouLearn</title>
+    <link rel="icon" href="style/img/img.png" type="image/icon type" />
+    <link rel="stylesheet" type="text/css" href="style/home-style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
- <article>
+  <body>
+    <header>
+      <a href="home.html">
+        <img class="logo" src="style/img/logo5.png" />
+      </a>
+      <div class="navigateur">
+        <a href="/">Home</a>
+        <a href="#lesson">Lessons</a>
+        <a href="cat.html">Catgories</a>
+        <a class="active" href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <div class="search">
+          <form action="">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <article>
       <div class="main-profile">
         <div class="profile">
           <div class="edite-profile">
             <a class="edite-profile-link" href="">Edite Profile</a>
           </div>
           <div class="img-profile">
-            <img src="static/style/img/profile.png" />
+            <img src="style/img/profile.png" />
           </div>
-          <div class="name-profile">{{profile.name}} {{profile.lastname}}</div>
-          <div class="job-profile">{{profile.profession}}</div>
+          <div class="name-profile">Name Prename</div>
+          <div class="job-profile">Job in life</div>
           <div class="about-profile">
             <div class="about-title-profile">About</div>
+            <div class="id-profile">UserId:</div>
+            <div class="id-user-profile">654adsa5s6</div>
             <div class="id-profile">Name:</div>
-            <div class="id-user-profile">{{profile.name}} {{profile.lastname}}</div>
+            <div class="id-user-profile">Full Name</div>
             <div class="id-profile">Email:</div>
-            <div class="id-user-profile">{{profile.email}}</div>
+            <div class="id-user-profile">email@gmail.com</div>
             <div class="id-profile">Phone:</div>
-            <div class="id-user-profile">{{profile.telephone}}</div>
+            <div class="id-user-profile">+216-11-123-456</div>
             <div class="id-profile">Profession:</div>
-            <div class="id-user-profile">{{profile.profession}}</div>
+            <div class="id-user-profile">Job in life</div>
             <div class="about-title-profile">Lessons Following</div>
           </div>
         </div>
       </div>
     </article>
-
-
-{% endblock %}
+  </body>
+  <footer>
+    <div class="footer">Holberton School</div>
+  </footer>
+</html>

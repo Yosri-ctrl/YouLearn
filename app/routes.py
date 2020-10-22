@@ -10,7 +10,7 @@ def index():
     form = SignupForm()                         
     return render_template('index.html', title='YouLearn', form=form)
 
-@app.route('/profile')
+@app.route('/profile.html')
 @login_required
 def profile():
 	profile = {'email':current_user.email,'name':current_user.name, 'lastname':current_user.lastname, 'profession': current_user.profession, 'telephone': current_user.telephone}
@@ -26,3 +26,8 @@ def logout():
 def catgories():
     form = SignupForm()                         
     return render_template('cat.html', title='YouLearn', form=form)
+
+@app.route('/about.html')
+def about():
+    form = SignupForm()                         
+    return render_template('about.html', title='YouLearn', form=form)

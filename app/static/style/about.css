@@ -106,10 +106,10 @@ section {
     
     background-size: cover;
     display: inline-block;
-    
+    position:relative;
     width: 300px;
     height: 200px;
-    margin: 50px 0px 0px 90px;
+    margin: 50px 0px 0px 230px;
     padding: 50px;
     padding-bottom: 90px;
     box-sizing: border-box;

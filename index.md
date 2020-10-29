@@ -1,4 +1,4 @@
-## YouLearn
+# YouLearn
 Define your life your world your passion your goals
 ![Image](https://cdn.statically.io/img/www.digitalclassworld.com/blog/wp-content/uploads/2020/08/E-learning-Vs-Traditional-Learning.jpg?quality=100&f=auto)
 
@@ -35,9 +35,10 @@ Eche cource will consit of 5-20 min of video, documents,... so depending on the 
 <br>
 The student can check the rating of eche cource so he can have a idea whether it will be a valide one or not.
 
- <br>
- ### About:
- This project was inspired to help any person that need the sources to learn any subject, regardless of thier background or age.
- It's ment to be as a part-time or a ful-time way to learn
+<br>
+### About:
+
+This project was inspired to help any person that need the sources to learn any subject, regardless of thier background or age.
+It's ment to be as a part-time or a ful-time way to learn
  
  

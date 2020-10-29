@@ -36,8 +36,7 @@ Eche cource will consit of 5-20 min of video, documents,... so depending on the 
 The student can check the rating of eche cource so he can have a idea whether it will be a valide one or not.
 
 <br>
-### About:
-
+## About:
 This project was inspired to help any person that need the sources to learn any subject, regardless of thier background or age.
 It's ment to be as a part-time or a ful-time way to learn
  
